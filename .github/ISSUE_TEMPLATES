@@ -1,11 +1,12 @@
-    **As a** user  
-    **I need** secure login function  
-    **So that** i can authenticate myself  
-          
-    ### Details and Assumptions
-        * it will help user authenticate their identity     
-    ### Acceptance Criteria     
-        gherkin 
-        Given help to identify user
-        When when they try to login
-        Then on successfull authentication login success
+**As a** [role]  
+**I need** [function]  
+**So that** [benefit]  
+      
+### Details and Assumptions
+    * [document what you know]      
+
+### Acceptance Criteria     
+    gherkin 
+    Given [some context]
+    When [certain action is taken]
+    Then [the outcome of action is observed]
