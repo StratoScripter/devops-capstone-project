@@ -32,6 +32,10 @@ jobs:
         run: |
           python -m pip install --upgrade pip wheel
           pip install -r requirements.txt
+          
+      - name: Wait for PostgreSQL
+        run: |
+          sleep 10  # Wait for 10 seconds to ensure PostgreSQL is ready
       
       - name: Lint with flake8
         run: |
