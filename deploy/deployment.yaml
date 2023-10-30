@@ -18,6 +18,8 @@ spec:
     spec:
       containers:
       - image: us.icr.io/sn-labs-bc200201109/accounts:1
+        command: ["gunicorn"]
+        args: ["--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
         name: accounts
         resources: {}
         env:
