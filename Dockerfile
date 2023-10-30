@@ -5,9 +5,6 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install gunicorn
-RUN pip install gunicorn
-
 # Copy the application contents
 COPY service/ ./service/
 
@@ -17,4 +14,4 @@ USER theia
 
 # Run the service
 EXPOSE 8080
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--log-level=info", "service:app"]
+CMD ["gunicorn", "--bind=0.0.0.0:8080", "--log-level=info", "service:app"]
