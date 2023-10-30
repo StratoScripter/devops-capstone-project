@@ -68,7 +68,7 @@ spec:
     - name: build
       workspaces:
         - name: source
-          workspaces: pipeline-workspace
+          workspace: pipeline-workspace
       taskRef:
         name: buildah
         kind: ClusterTask
